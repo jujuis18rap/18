@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18's Music</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .soundcloud-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, #ff0000, #770000);
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0px 0px 20px #ff0000, 0px 0px 40px rgba(255, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .soundcloud-link::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(255, 0, 0, 0.6) 10%, transparent 60%);
+            transition: all 0.4s ease-out;
+            transform: translate(-50%, -50%) scale(0);
+        }
+        .soundcloud-link:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+        }
+        .soundcloud-link:hover {
+            background: linear-gradient(45deg, #770000, black);
+            box-shadow: 0px 0px 30px #ff0000, 0px 0px 60px rgba(255, 0, 0, 0.7);
+            transform: scale(1.1);
+        }
+        .image-container {
+            margin-top: 30px;
+        }
+        .image-container img {
+            width: 400px;
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px white;
+        }
+    </style>
+</head>
+<body>
+    <h1>18's Music</h1>
+    
+    <p>Listen to my dhitty ass music:</p>
+
+    <a href="https://soundcloud.com/111theyluvvalentina" target="_blank" class="soundcloud-link">🔥 SoundCloud 🔥</a>
+
+    <div class="image-container">
+        <!-- Replace this URL with the correct image URL -->
+        <img src="https://i.ibb.co/Gfhbc3Y1/your-image.jpg" alt="Custom Image">
+    </div>
+</body>
+</html>
